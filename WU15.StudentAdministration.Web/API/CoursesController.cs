@@ -14,7 +14,7 @@ namespace WU15.StudentAdministration.Web.API
 {
     public class CoursesController : ApiController
     {
-
+        //test ändring
         private DefaultDataContext db = new DefaultDataContext();
 
 
