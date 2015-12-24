@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Net.Mail;
-using System.Security.Cryptography.X509Certificates;
 using System.Web.Http;
 using WU15.StudentAdministration.Web.DataAccess;
 using WU15.StudentAdministration.Web.Models;
@@ -14,7 +9,7 @@ namespace WU15.StudentAdministration.Web.API
 {
     public class CoursesController : ApiController
     {
-        //test ändring
+
         private DefaultDataContext db = new DefaultDataContext();
 
 
@@ -89,7 +84,7 @@ namespace WU15.StudentAdministration.Web.API
 
                 db.Courses.Add(courseToUpdate);
             }
-                db.SaveChanges();
+            db.SaveChanges();
 
             return course.Name;
         }
